@@ -1,0 +1,158 @@
+.layout-parent {
+  background-color: whitesmoke;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  height: 100vh;
+  gap: 20px;
+  overflow-x: hidden !important;
+  /* overflow-y: hidden !important; */
+}
+
+.body {
+  width: 100%;
+}
+.header {
+  padding: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  width: 600px;
+}
+.add-button {
+  border-radius: 5px;
+  background-color: #f26f21;
+  border: none;
+  color: white;
+}
+
+.sidebar {
+  background-color: #f26f21;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  padding: 10px 30px;
+  flex-direction: column;
+  height: 103vh;
+  width: 270px;
+}
+.content {
+  background-color: rgb(245 245 245);
+  /* overflow-y: scroll !important;
+  overflow-x: hidden !important; */
+  height: 103vh;
+  border-radius: 10px;
+}
+.children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  color: #343541;
+  padding: 0px 5px 5px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.logo > img {
+  border: 1px solid;
+  border-radius: 40px;
+}
+
+.role {
+  color: white;
+  font-size: 16px;
+}
+.menu {
+  margin-top: 5px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all;
+  gap: 20px;
+}
+.active-menu-item {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.menu-item i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+.menu-item span {
+  color: white;
+  font-size: 18px;
+}
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-collapsed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item-collapsed {
+  text-align: center;
+  width: 50px;
+  color: white;
+  width: 50px;
+  padding-left: 30px;
+}
+.gap-5 {
+  gap: 3rem !important;
+}
+.ant-input-group-addon:first-child {
+  background-color: #1677ff;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-inline {
+  background-color: transparent !important;
+  border-inline-end: none !important;
+}
+.ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+  background: rgb(242 111 32) !important;
+}
+.ant-menu-light .ant-menu-item-selected {
+  background-color: #f26f21;
+  border: 1px solid #ffd300;
+}
+.ant-menu-light.ant-menu-inline .ant-menu-item {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.ant-menu-inline .ant-menu-submenu {
+  padding-bottom: 6.9px !important;
+}
+.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #000000;
+}
+.ant-menu .ant-menu-item .ant-menu-item-icon svg {
+  font-size: 19px !important;
+}
+.anticon svg {
+  font-size: 19px !important;
+}
+
+.gap-5 {
+  gap: 3rem !important;
+}
+.name-admin {
+  padding-top: 25px;
+}
+.name-admin > h2 {
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
