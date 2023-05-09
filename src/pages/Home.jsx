@@ -6,6 +6,7 @@ import "../resources/home.css"
 import Header from '../components/Header';
 import PageTitle from '../components/PageTitle';
 import DetailError from '../components/DetailError';
+import { useNavigate } from 'react-router-dom';
 
 const items = [
     {
@@ -18,9 +19,11 @@ const items = [
     },
 ];
 const Home = () => {
+    const navigate = useNavigate();
     const [query, setQuery] = useState("");
     const [showErrorDetail, setShowErrorDetail] = useState(false)
     const [selectCoin, setSelectCoin] = useState(null)
+
     const data = [
         {
             key: {
@@ -165,11 +168,11 @@ const Home = () => {
             (<Button onClick={() => {
                 setSelectCoin(record);
                 setShowErrorDetail(true);
-                console.log("click" + showErrorDetail);
+                navigate(`/error/${record.key.$oid}`)
             }}> Detail </Button>)
         },
     ];
-    console.log(selectCoin?.state);
+    console.log("selectCoi", selectCoin?.$oid);
     return (
         <div>
             <div>
@@ -191,7 +194,7 @@ const Home = () => {
                     />
                 </div>
             </div>
-            {showErrorDetail &&
+            {/* {showErrorDetail &&
                 (<DetailError
                     showErrorDetail={showErrorDetail}
                     setShowErrorDetail={setShowErrorDetail}
@@ -199,7 +202,7 @@ const Home = () => {
                     selectCoin={selectCoin}
                     type={selectCoin?.state === 1 ? "Detail" : "Error"}
                 />)
-            }
+            } */}
         </div>
     );
 };
